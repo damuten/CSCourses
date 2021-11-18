@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #161616;
+}
+
+li, a, button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.menu {
+    width: 80%;
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    background-image: url(2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    margin-left: 140px;
+    /*
+    margin-top: 10px;
+    height: 50px;
+    width: 1300px;
+    background: linear-gradient(
+        to right bottom,
+        hsla(0, 0%, 20%, 0.5),
+        rgba(51, 51, 51, 0.1)
+        );
+        backdrop-filter: blur(0.4rem);
+        */
+        background-color: #333333;
+    border-radius: 50px;
+    filter: drop-shadow(15px 15px 9px #000000bb);
+}
+.logo {
+    cursor: pointer;
+    align-items: left;
+    width: 100px;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover {
+    color: #fea9bf;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(254, 169, 191, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: rgba(254, 169, 191, 0.8);
+}
+.signlogo {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.cta {
+    float: right;
+}
+
+.test {
+    background-color: #fea9bf;
+    height: 150px;
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+
+
+.blcktxt {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+
+
+}
+.titlebk {
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.courses {
+    align-content: center;
+}
+.welcome
+{
+    top: 50%;
+    Left: 50%;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.text {
+    font-family: "SF Pro Display-Light", Helvetica;
+    color: #edf0f1;
+    font-size: 2.2rem;
+}
+.titlemain {
+    font-family: "SF Pro Display-Light", Helvetica;
+    color: #edf0f1;
+    font-size: 6rem;
+    margin-left: 0px;
+    margin-top: 00px;
+    width: 450px;
+}
+.text {
+    height: 250px;
+    width: 750px;
+    margin-left: 120px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.colortxt {
+    color:#fea9bf;
+}
+.abt {
+    font-family: "SF Pro Display-Bold", Helvetica;
+    color: #717171;
+    font-size: 3rem;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+/*FAQ SECTION STRTS HERE*/
+section {
+    min-height: 100vh;
+    width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    color: #fea9bf;
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    font-family: "SF Pro Display-Light", Helvetica;
+  }
+  
+  .faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fea9bf;
+    cursor: pointer;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #edf0f1;
+  }
+  
+  .question h3 {
+    font-size: 1.8rem;
+    color: #edf0f1;
+    font-family: "SF Pro Display-Light", Helvetica;
+
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    color: #edf0f1;
+  }
+  
+  .answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    color: #edf0f1;
+    font-family: "SF Pro Display-Light", Helvetica;
+  }
+  
+  .faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out
+  }
+  
+  .faq.active svg{
+    transform: rotate(180deg);
+  }
+  
+  svg{
+    transition: transform .3s ease-in;
+  }
+  
+  @keyframes fade {
+    from{
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+/*FAQ SECTION ENDS HERE*/
+
+/*COURSES*/
+section#courses{
+  margin: 10 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  margin-left: 120px;
+  margin-right: 5rem;
+  
+}
+.courseName {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #edf0f1;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #fea9bf;
+  font-family: "SF Pro Display-Light", Helvetica;
+
+
+}
+.mainInfo{
+  color: #edf0f1;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: "SF Pro Display-Light", Helvetica;
+
+}
+ol { 
+  color: #edf0f1;
+}
+li{
+  font-size: 1.5rem;
+}
+
+.bottonJOIN{
+  margin-top: 10px;
+  background-color: #e05a7e;
+  border: none;
+  color: #00abe4;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-align: center;
+  transition-duration: 01.4s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.join{
+  font-size: 20px;
+  
+}
+#botton#JOIN:active::after{
+  padding: 0;
+  opacity: 1;
+  transition: 0s;
+}
+/*COURSES END*/
+
+
+::-webkit-scrollbar{
+   width: 0;
+}
+/*footer*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+    font-family: "SF Pro Display-Light", Helvetica;
+
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #333333;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #fea9bf;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #fea9bf;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #fea9bf;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/*payment*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.cont {
+  background-color: #333333;
+  padding: 25px 25px 5px 25px;
+  border-radius: 30px;
+  font-family: "SF Pro Display-Light", Helvetica;
+  /*filter: drop-shadow(15px 15px 9px #000000bb);
+  position: relative;
+  z-index: 3;*/
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: #edf0f1;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #fea9bf;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #e05a7e;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+    width: 500px;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
